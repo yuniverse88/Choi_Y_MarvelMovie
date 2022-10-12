@@ -27,11 +27,54 @@ header{
 #main-logo { width: 300px; padding: 10px 0; }
 
 /* main section styles */
-#character-nav { text-align: center; background-color: black; }
+#character-nav { 
+    text-align: center; 
+    background-color: rgb(101, 96, 96); 
+
+    /* add a background image to the nav element */
+    background-image: url('../images/characters_art_mas_mob_01.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-blend-mode: overlay;
+    
+}
+
 .characters { list-style-type: none; }
 
-.characters li { display: inline-block; }
+
+
+.characters li {
+     display: inline-block; 
+     height: 220px;
+     margin: 10px 8px;
+
+     background-color: black;
+     text-align: left;
+     overflow: hidden;
+    }
+
+    .characters li h5 {
+        padding: 14px 8px;
+    }
+
 .characters li img { width: 150px; cursor: pointer;}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+
+    background-image: url('../images/marvelSprites.jpg');
+}
+.sprite:hover { background-position-y: -150px !important; }
+
+#carol { background-position: -150px 0; }
+#clint { background-position: -300px 0; }
+#hulk { background-position: -450px 0; }
+#thor { background-position: -600px 0; }
+#widow { background-position: -750px 0; }
+
+.red-bumper { height:  6px; background-color: red;}
 
 article { padding: 20px; }
 
